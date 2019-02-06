@@ -6,9 +6,9 @@
  * Time: 20:21
  */
 
-class BootstrapConsole
+class ConsoleApplication
 {
-    public function handCommand(){
+    public function handCommand(Console $console){
         $argv = $_SERVER['argv'];
         foreach ($argv as $key => $arg){
             if((strpos($arg, 'moon') + 4) == strlen($arg) || $arg === 'moon'){
@@ -17,9 +17,6 @@ class BootstrapConsole
                 unset($argv[$key]);
             }
         }
-        $console = new Console();
-        //$this->add('BootstrapConsole', $console);
-        //require $this->rootPath . '/routes/console.php';
         if(!isset($argv[1])){
             echo 'Moon Console v0.3.6'.PHP_EOL;
             echo '------------------------------------------------'.PHP_EOL;
