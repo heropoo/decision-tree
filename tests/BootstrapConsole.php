@@ -17,11 +17,11 @@ class BootstrapConsole
                 unset($argv[$key]);
             }
         }
-        $console = new BootstrapConsole();
-        $this->add('BootstrapConsole', $console);
-        require $this->rootPath . '/routes/console.php';
+        $console = new Console();
+        //$this->add('BootstrapConsole', $console);
+        //require $this->rootPath . '/routes/console.php';
         if(!isset($argv[1])){
-            echo 'Moon Console '.\Moon::version().PHP_EOL;
+            echo 'Moon Console v0.3.6'.PHP_EOL;
             echo '------------------------------------------------'.PHP_EOL;
             // command list
             ksort($console->commands);
