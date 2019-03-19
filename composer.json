@@ -1,17 +1,20 @@
 {
-    "name": "heropoo/decision-tree",
-    "type": "library",
-    "description": "Decision tree",
-    "license": "MIT",
-    "require": {
-        "php": ">=7.0"
+  "name": "heropoo/decision-tree",
+  "type": "library",
+  "description": "Decision tree",
+  "license": "MIT",
+  "require": {
+    "php": ">=7.0"
+  },
+  "require-dev": {
+    "heropoo/console": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Moon\\DecisionTree\\": "./src"
     },
-    "require-dev": {
-    },
-    "autoload": {
-        "psr-4": {
-            "": "./src"
-        },
-        "classmap": ["tests"]
-    }
+    "classmap": [
+      "tests"
+    ]
+  }
 }

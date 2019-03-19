@@ -9,15 +9,14 @@
 
 require_once __DIR__.'/../vendor/autoload.php';
 
-$console = new Console();
-
+$console = new \Moon\Console\Console();
+$console->namespace = "Commands";
 $console->add('hello', function (){
     return 'world';
 });
 
 $console->add('ping', 'PingCommand::ping');
 
-
-$app = new ConsoleApplication();
+$app = new \Moon\Console\ConsoleApplication();
 $status = $app->handCommand($console);
 exit($status);
