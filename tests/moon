@@ -10,12 +10,11 @@
 require_once __DIR__.'/../vendor/autoload.php';
 
 $console = new \Moon\Console\Console();
-$console->namespace = "Commands";
 $console->add('hello', function (){
     return 'world';
 });
 
-$console->add('ping', 'PingCommand::ping');
+$console->add('risk-review', 'RiskReviewCommand::run');
 
 $app = new \Moon\Console\ConsoleApplication();
 $status = $app->handCommand($console);
