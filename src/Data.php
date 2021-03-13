@@ -1,6 +1,8 @@
 <?php
+
 namespace Moon\DecisionTree;
 
-class Data{
+class Data
+{
     protected $values = [];     //key => value
 }
