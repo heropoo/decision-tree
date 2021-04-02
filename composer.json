@@ -4,11 +4,16 @@
   "description": "Decision tree",
   "license": "MIT",
   "require": {
-    "php": ">=7.0"
+    "php": ">=8.0"
   },
   "autoload": {
     "psr-4": {
       "Moon\\DecisionTree\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests"
     }
   },
   "require-dev": {

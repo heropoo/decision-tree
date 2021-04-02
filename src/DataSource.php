@@ -8,7 +8,7 @@ class DataSource
 {
     protected $name;
 
-    public function get(){
+    public function get($key){
 
     }
 }

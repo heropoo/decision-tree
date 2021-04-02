@@ -2,7 +2,7 @@
 
 namespace Moon\DecisionTree;
 
-class Data
+class DataSet
 {
     protected $values = [];     //key => value
 }
